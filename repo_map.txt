@@ -1,0 +1,14 @@
+CINE_BERT/
+│
+├── src/
+│   └── cine_bert/
+│       ├── train.py
+│       └── inference.py, cuda_check.py, ...
+│
+├── tests/
+│   └── ... 
+└── api/
+    ├── main.py
+    ├── requirements.txt
+    ├── saved_model/
+    └── DockerFile

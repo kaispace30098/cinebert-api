@@ -1,0 +1,39 @@
+[project]
+name = "cine-bert"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Tom Chang",email = "ckf30098@yahoo.com.tw"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch (>=2.1.0,<3.0.0)",
+    "torchvision (>=0.16.0,<0.17.0)",
+    "torchaudio (>=2.1.0,<3.0.0)",
+    "datasets (>=3.5.1,<4.0.0)",
+    "transformers[sentencepiece] (>=4.51.3,<5.0.0)",
+    "plotly (>=6.0.1,<7.0.0)",
+    "numpy (<2.0)",
+    "scikit-learn (>=1.6.1,<2.0.0)",
+    "fsspec (<=2025.3.0)",
+    "datetime (>=5.5,<6.0)"
+]
+
+[tool.poetry]
+packages = [{include = "cine_bert", from = "src"}]
+
+
+[tool.poetry.dependencies]
+torch = {source = "pytorch-cuda"}
+torchvision = {source = "pytorch-cuda"}
+torchaudio = {source = "pytorch-cuda"}
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name     = "pytorch-cuda"
+url      = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
