@@ -10,5 +10,18 @@ CINE_BERT/
 └── api/
     ├── main.py
     ├── requirements.txt
-    ├── saved_model/
+    ├── saved_model/ (got to s3)
     └── DockerFile
+
+
+    CINE_BERT/
+│
+├── deploy/
+│   └── deploy.sh      👈 放這裡
+│
+├── src/
+│
+├── api/
+│
+└── .github/
+    └── workflows/
